@@ -19,12 +19,10 @@ class Field:
         return __check_bord(obj.pos, obj.pos + side.vec())
 
     def __check_bord(a,b):
-        if (a,b) in self.borders or (b,a) in self.borders:
-            return True
-        else:
-            return False
+        return True if (a,b) in self.border or (b,a) in self.borders else False
 
-    def mark(self,)
+    def mark(self,):
+        pass
 
 class Robot:
     def __init__(self, pos, name = None):
